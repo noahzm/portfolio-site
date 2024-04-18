@@ -24,7 +24,7 @@ module.exports = {
         short_name: `Noah Michaels`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#6463A5`,
+        theme_color: `#ffffff`,
         display: `standalone`,
         icon: `src/images/icon.svg`,
       },
