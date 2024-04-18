@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Noah Michaels`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://noahmichaels.xyz`,
   },
   plugins: [
     "gatsby-plugin-postcss",
@@ -17,5 +17,18 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Noah Michaels`,
+        short_name: `Noah Michaels`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#6463A5`,
+        display: `standalone`,
+        icon: `src/images/icon.svg`,
+      },
+    },
+    "gatsby-plugin-offline",
   ],
 };

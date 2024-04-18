@@ -28,4 +28,4 @@ const PortfolioPage = () => {
 
 export default PortfolioPage;
 
-export const Head = () => <title>Portfolio</title>;
+export const Head = () => <title>Noah Michaels &bull; Portfolio</title>;
