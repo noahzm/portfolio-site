@@ -6,10 +6,7 @@ export default function Layout({ children }) {
     <div>
       <div className="navbar p-3 lg:p-6">
         <div className="flex-1">
-          <Link
-            to="/"
-            className="font-medium text-xl lg:text-4xl tracking-tight"
-          >
+          <Link to="/" className="font-medium text-xl lg:text-3xl">
             Noah Michaels
           </Link>
         </div>

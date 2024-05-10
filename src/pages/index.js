@@ -7,14 +7,12 @@ const IndexPage = () => {
     <Layout>
       <div className="lg:flex">
         <div className="p-3 lg:p-6 lg:w-1/2">
-          <h2 className="text-xl lg:text-3xl font-medium tracking-tight">
+          <h2 className="lg:text-xl">
             Noah is a graphic designer from Raleigh, North Carolina. He is
             currently a Printing Specialist for the North Carolina General
             Assembly.
           </h2>
-          <h3 className="pt-8 lg:pt-16 lg:text-xl font-medium">
-            Work Experience
-          </h3>
+          <h3 className="pt-8 lg:pt-16 lg:text-xl">Work Experience</h3>
           <p className="pt-4 lg:pt-8 lg:text-lg">
             Printing Specialist → NCGA, Raleigh, 2021–Present
           </p>

@@ -3,28 +3,12 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "ROM";
-  src: url(/fonts/ABCROM-Regular-Trial.woff2) format("woff2");
-  font-feature-settings: /* "ss01" 1,  */ "ss05" 1;
+  font-family: "PP Mori";
+  src: url(/fonts/PPMori-Regular.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: "ROM";
-  src: url(/fonts/ABCROM-Bold-Trial.woff2) format("woff2");
-  font-weight: 700;
-  font-feature-settings: /* "ss01" 1,  */ "ss05" 1;
-}
-
-@font-face {
-  font-family: "ROM";
-  src: url(/fonts/ABCROM-Medium-Trial.woff2) format("woff2");
-  font-weight: 600;
-  font-feature-settings: /* "ss01" 1,  */ "ss05" 1;
-}
-
-@font-face {
-  font-family: "ROM";
-  src: url(/fonts/ABCROM-Book-Trial.woff2) format("woff2");
+  font-family: "PP Mori";
+  src: url(/fonts/PPMori-SemiBold.woff2) format("woff2");
   font-weight: 500;
-  font-feature-settings: /* "ss01" 1,  */ "ss05" 1;
 }

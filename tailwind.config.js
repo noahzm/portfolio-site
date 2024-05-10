@@ -6,7 +6,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["ROM", "sans-serif"],
+      sans: ["PP Mori", "sans-serif"],
     },
     extend: {},
   },
