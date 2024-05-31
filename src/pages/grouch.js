@@ -24,6 +24,7 @@ const GrouchPortfolioPage = () => {
         src="../images/grouch/mockup.png"
         alt=""
         layout="fullWidth"
+        placeholder="blurred"
       />
     </Layout>
   );

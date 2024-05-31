@@ -10,7 +10,11 @@ const WakeForestPortfolioPage = () => {
       <Text py="md">
         Designed a t-shirt for Wake Forest University's PA Ultrasound Club
       </Text>
-      <StaticImage src="../images/wakeforest/mockup.png" alt="StMM Emblem" />
+      <StaticImage
+        src="../images/wakeforest/mockup.png"
+        alt=""
+        placeholder="blurred"
+      />
     </Layout>
   );
 };

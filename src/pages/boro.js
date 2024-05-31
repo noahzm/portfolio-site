@@ -11,7 +11,12 @@ const BoroPortfolioPage = () => {
         Provided art direction and graphic design for a local DIY and
         skateboarding-adjacent clothing brand.
       </Text>
-      <StaticImage src="../images/boro/mockup.png" alt="" layout="fullWidth" />
+      <StaticImage
+        src="../images/boro/mockup.png"
+        alt=""
+        layout="fullWidth"
+        placeholder="blurred"
+      />
     </Layout>
   );
 };

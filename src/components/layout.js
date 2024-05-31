@@ -1,5 +1,5 @@
 import React from "react";
-import { AppShell, Burger, Affix, Text, Title } from "@mantine/core";
+import { AppShell, Burger, Affix, Text } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { Link } from "gatsby";
 
@@ -16,19 +16,13 @@ export default function Layout({ children }) {
       padding="md"
     >
       <Affix position={{ bottom: "1rem", left: "1rem" }}>
-        <Burger
-          bg="white"
-          opened={opened}
-          onClick={toggle}
-          hiddenFrom="sm"
-          size="sm"
-        />
+        <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
       </Affix>
 
       <AppShell.Navbar p="md">
-        <Title component={Link} to="/" size="h5" c="black" td="none">
+        <Text fw="500" component={Link} to="/">
           Noah Michaels
-        </Title>
+        </Text>
         <Text component={Link} to="/about" pt="md">
           About
         </Text>
