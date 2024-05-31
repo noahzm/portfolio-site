@@ -1,31 +1,42 @@
 import React from "react";
+import { AppShell, Burger, Affix, Text, Title } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
 import { Link } from "gatsby";
 
 export default function Layout({ children }) {
+  const [opened, { toggle }] = useDisclosure();
+
   return (
-    <div>
-      <div className="navbar p-3 lg:p-6">
-        <div className="flex-1">
-          <Link to="/" className="font-medium text-xl lg:text-3xl">
-            Noah Michaels
-          </Link>
-        </div>
-        <div className="flex-none">
-          <div className="tabs">
-            <Link
-              to="/portfolio"
-              className="tab lg:text-lg"
-              activeClassName="underline decoration-2 underline-offset-8"
-            >
-              Portfolio
-            </Link>
-            <a href="mailto:hi@noahmichaels.xyz" className="tab lg:text-lg">
-              Contact
-            </a>
-          </div>
-        </div>
-      </div>
-      {children}
-    </div>
+    <AppShell
+      navbar={{
+        width: 300,
+        breakpoint: "sm",
+        collapsed: { mobile: !opened },
+      }}
+      padding="md"
+    >
+      <Affix position={{ bottom: "1rem", left: "1rem" }}>
+        <Burger
+          bg="white"
+          opened={opened}
+          onClick={toggle}
+          hiddenFrom="sm"
+          size="sm"
+        />
+      </Affix>
+
+      <AppShell.Navbar p="md">
+        <Title component={Link} to="/" size="h5" c="black" td="none">
+          Noah Michaels
+        </Title>
+        <Text component={Link} to="/about" pt="md">
+          About
+        </Text>
+        <Text component="a" href="mailto:hi@noahmichaels.xyz">
+          Contact
+        </Text>
+      </AppShell.Navbar>
+      <AppShell.Main>{children}</AppShell.Main>
+    </AppShell>
   );
 }

@@ -1,34 +1,26 @@
 import * as React from "react";
-import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
+import Layout from "../components/layout";
+import { SimpleGrid } from "@mantine/core";
+import { Link } from "gatsby";
 
 const IndexPage = () => {
   return (
     <Layout>
-      <div className="lg:flex">
-        <div className="p-3 lg:p-6 lg:w-1/2">
-          <h2 className="lg:text-xl">
-            Noah is a graphic designer from Raleigh, North Carolina. He is
-            currently a Printing Specialist for the North Carolina General
-            Assembly.
-          </h2>
-          <h3 className="pt-8 lg:pt-16 lg:text-xl">Work Experience</h3>
-          <p className="pt-4 lg:pt-8 lg:text-lg">
-            Printing Specialist → NCGA, Raleigh, 2021–Present
-          </p>
-          <p className="lg:text-lg">
-            Webmaster & Graphic Designer → Creative Printing, Boone, 2018–2020
-          </p>
-        </div>
-        <div className="p-3 lg:p-6 lg:w-1/2">
+      <SimpleGrid cols={{ "0em": 1, "36em": 2, "62em": 3 }} type="container">
+        <Link to="/grouch">
+          <StaticImage src="../images/grouch/mockup.png" alt="Grouch T-Shirt" />
+        </Link>
+        <Link to="/wakeforest">
           <StaticImage
-            src="../images/home.png"
-            alt="Noah Michaels"
-            placeholder="blurred"
-            aspectRatio={3 / 2}
+            src="../images/wakeforest/mockup.png"
+            alt="Wake Forest PA Ultrasound Club T-Shirt"
           />
-        </div>
-      </div>
+        </Link>
+        <Link to="/boro">
+          <StaticImage src="../images/boro/mockup.png" alt="Boro T-Shirt" />
+        </Link>
+      </SimpleGrid>
     </Layout>
   );
 };
