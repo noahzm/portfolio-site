@@ -14,6 +14,7 @@ const WakeForestPortfolioPage = () => {
         src="../images/wakeforest/mockup.png"
         alt=""
         placeholder="blurred"
+        layout="fullWidth"
       />
     </Layout>
   );

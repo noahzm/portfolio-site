@@ -11,5 +11,10 @@ export const theme = createTheme({
         withBorder: false,
       },
     }),
+    Anchor: {
+      defaultProps: {
+        c: "black",
+      },
+    },
   },
 });

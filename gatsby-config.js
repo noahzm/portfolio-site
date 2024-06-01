@@ -1,4 +1,7 @@
 module.exports = {
+  flags: {
+    FAST_DEV: true,
+  },
   siteMetadata: {
     title: `Noah Michaels`,
     siteUrl: `https://noahmichaels.xyz`,
@@ -30,6 +33,5 @@ module.exports = {
         theme_color_in_head: false,
       },
     },
-    "gatsby-plugin-offline",
   ],
 };

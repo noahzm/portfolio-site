@@ -1,21 +1,19 @@
-import React from "react";
-import "./src/styles/global.css";
 import "@mantine/core/styles.css";
-
+import React from "react";
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import { theme } from "./src/theme";
+import "./src/styles/global.css";
 
 export const wrapPageElement = ({ element }) => {
   return (
-    <html data-mantine-color-scheme="light">
-      <head>
-        <ColorSchemeScript forceColorScheme="light" />
-      </head>
-      <body>
-        <MantineProvider theme={theme} forceColorScheme="light">
-          {element}
-        </MantineProvider>
-      </body>
-    </html>
+    <>
+      <MantineProvider
+        key="mantine-provider"
+        theme={theme}
+        forceColorScheme="light"
+      >
+        {element}
+      </MantineProvider>
+    </>
   );
 };
