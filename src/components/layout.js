@@ -25,9 +25,7 @@ export default function Layout({ children }) {
         <Anchor component={Link} to="/about" pt="md">
           About
         </Anchor>
-        <Anchor href="mailto:hi@noahmichaels.xyz">
-          Contact
-        </Anchor>
+        <Anchor href="mailto:hi@noahmichaels.xyz">Contact</Anchor>
       </AppShell.Navbar>
       <AppShell.Main>{children}</AppShell.Main>
     </AppShell>
