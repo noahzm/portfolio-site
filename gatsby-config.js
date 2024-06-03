@@ -4,6 +4,7 @@ module.exports = {
   },
   siteMetadata: {
     title: `Noah Michaels`,
+    description: `Noah is a graphic designer from Raleigh, North Carolina.`,
     siteUrl: `https://noahmichaels.xyz`,
   },
   plugins: [
