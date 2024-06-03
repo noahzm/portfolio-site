@@ -7,8 +7,8 @@ const GrouchPortfolioPage = () => {
   return (
     <Layout>
       <Text pb="md">
-        Grouch clothing and accessories. Items may still be available for
-        purchase at the website,{" "}
+        Merchandise for Grouch. Items may still be available for purchase at the
+        website,{" "}
         <Anchor
           target="_blank"
           rel="noreferrer"
