@@ -31,7 +31,7 @@ const IndexPage = () => {
         </Link>
         <Link to="/ncga">
           <StaticImage
-            src="../images/ncga/visitors-sticker.png"
+            src="../images/ncga/visitors-sticker1.png"
             alt="NCGA Stickers"
             placeholder="blurred"
           />
