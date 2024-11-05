@@ -12,6 +12,8 @@ const AboutPage = () => {
       </Text>
       <Title order={2} pt="md" size="h5">
         Work Experience
+        <br />
+        ---------------
       </Title>
       <Text>
         Print Specialist
@@ -25,14 +27,18 @@ const AboutPage = () => {
       </Text>
       <Title order={2} pt="md" size="h5">
         Education
+        <br />
+        ---------
       </Title>
       <Text>
         Graphic Arts & Imaging Technology
         <br />
         &#8627; Appalachian State University, 2016&ndash;2020
       </Text>
-      <Title order={2} fw={500} pt="md" size="h5">
+      <Title order={2} pt="md" size="h5">
         Activities
+        <br />
+        ----------
       </Title>
       <Text>
         Web Development Teaching Assistant

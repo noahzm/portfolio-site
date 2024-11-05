@@ -1,10 +1,9 @@
 import { AppShell, createTheme } from "@mantine/core";
 
 export const theme = createTheme({
-  fontFamily: "PP Mori",
-  headings: {
-    fontWeight: "500",
-  },
+  fontFamily: "JetBrains Mono",
+  headings: { fontWeight: "normal" },
+
   components: {
     AppShell: AppShell.extend({
       defaultProps: {

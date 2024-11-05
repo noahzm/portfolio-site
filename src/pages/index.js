@@ -29,13 +29,6 @@ const IndexPage = () => {
             placeholder="blurred"
           />
         </Link>
-        <Link to="/ncga">
-          <StaticImage
-            src="../images/ncga/visitors-sticker1.png"
-            alt="NCGA Stickers"
-            placeholder="blurred"
-          />
-        </Link>
       </SimpleGrid>
     </Layout>
   );

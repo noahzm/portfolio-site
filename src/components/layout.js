@@ -19,13 +19,13 @@ export default function Layout({ children }) {
         <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
       </Affix>
       <AppShell.Navbar p="md">
-        <Anchor fw="500" component={Link} to="/">
+        <Anchor component={Link} to="/">
           Noah Michaels
         </Anchor>
         <Anchor component={Link} to="/about" pt="md">
           About
         </Anchor>
-        <Anchor href="mailto:hi@noahmichaels.xyz">Contact</Anchor>
+        <Anchor href="mailto:me@noahmichaels.xyz">Contact</Anchor>
       </AppShell.Navbar>
       <AppShell.Main>{children}</AppShell.Main>
     </AppShell>
