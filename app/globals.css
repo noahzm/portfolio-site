@@ -125,6 +125,8 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia,
+      serif;
   }
   body {
     @apply bg-background text-foreground;
