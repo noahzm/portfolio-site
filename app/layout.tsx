@@ -1,10 +1,10 @@
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/mode-toggle";
-import { JetBrains_Mono } from "next/font/google";
+import { STIX_Two_Text } from "next/font/google";
 import "./globals.css";
 import React from "react";
 
-const jetBrainsMono = JetBrains_Mono({
+const font = STIX_Two_Text({
   subsets: ["latin"],
   display: "swap",
 });
@@ -16,17 +16,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={jetBrainsMono.className}
-      suppressHydrationWarning
-    >
+    <html lang="en" className={font.className} suppressHydrationWarning>
       <body className="flex items-center justify-center min-h-dvh">
         <ThemeProvider attribute="class">
           <div className="fixed bottom-4 right-4">
             <ModeToggle />
           </div>
-          <div className="m-4 prose prose-stone dark:prose-invert">{children}</div>
+          <div className="m-4 prose prose-stone dark:prose-invert">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

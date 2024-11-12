@@ -9,6 +9,9 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontSize: {
+      base: "1.25rem",
+    },
     container: {
       center: "true",
       padding: "2rem",
@@ -102,11 +105,12 @@ module.exports = {
       typography: ({ theme }) => ({
         stone: {
           css: {
+            fontSize: "1.25rem",
             "--tw-prose-body": theme("colors.stone[700]"),
-            "--tw-prose-headings": theme("colors.stone[900]"),
-            "--tw-prose-lead": theme("colors.stone[600]"),
-            "--tw-prose-links": theme("colors.stone[900]"),
-            "--tw-prose-bold": theme("colors.stone[900]"),
+            "--tw-prose-headings": theme("colors.stone[700]"),
+            "--tw-prose-lead": theme("colors.stone[700]"),
+            "--tw-prose-links": theme("colors.stone[700]"),
+            "--tw-prose-bold": theme("colors.stone[700]"),
             "--tw-prose-counters": theme("colors.stone[500]"),
             "--tw-prose-bullets": theme("colors.stone[300]"),
             "--tw-prose-hr": theme("colors.stone[200]"),
@@ -123,7 +127,7 @@ module.exports = {
             "--tw-prose-invert-headings": theme("colors.white"),
             "--tw-prose-invert-lead": theme("colors.stone[400]"),
             "--tw-prose-invert-links": theme("colors.white"),
-            "--tw-prose-invert-bold": theme("colors.white"),
+            "--tw-prose-invert-bold": theme("colors.stone[300]"),
             "--tw-prose-invert-counters": theme("colors.stone[400]"),
             "--tw-prose-invert-bullets": theme("colors.stone[600]"),
             "--tw-prose-invert-hr": theme("colors.stone[700]"),

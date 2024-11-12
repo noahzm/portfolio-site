@@ -34,10 +34,10 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "eslint": "^9",
-    "eslint-config-next": "15.0.3",
     "@types/mdx": "^2.0.13",
     "@types/node": "22.9.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.0.3",
     "postcss": "^8"
   }
 }
