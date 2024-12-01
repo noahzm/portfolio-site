@@ -1,5 +1,3 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,5 +5,18 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            "--tw-prose-body": "black",
+            "--tw-prose-headings": "black",
+            "--tw-prose-bold": "black",
+          },
+        },
+      },
+    },
+  },
   plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate")],
 };

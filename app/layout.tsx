@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning className={cardone.className}>
       <body className="flex items-center justify-center min-h-dvh">
         <ThemeProvider attribute="class">
-          <div className="m-4 prose prose-neutral text-black">
+          <div className="m-4 prose">
             {children}
           </div>
         </ThemeProvider>
