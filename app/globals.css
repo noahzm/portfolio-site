@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Cardone";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./Cardone-Regular.woff2) format("woff2");
+  }
+  @font-face {
+    font-family: "Cardone";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(./Cardone-Bold.woff2) format("woff2");
+  }
+}
